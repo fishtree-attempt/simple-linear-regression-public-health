@@ -6,7 +6,7 @@ exercises: 10
 ---
 
 ```{r, include=FALSE}
-load("../bin/data.RData")
+load("data/data.RData")
 library(ggplot2)
 library(dplyr)
 library(jtools)
@@ -58,8 +58,6 @@ for an individual with an age of 480 months?
 
 $101.812 + 0.033 * 480 = 117.652 \text{mmHg}$.
 
-
-
 :::::::::::::::::::::::::
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -104,8 +102,6 @@ Recall that 95% of 95% confidence intervals are expected to contain the
 population mean.
 Therefore, we can be fairly confident that the true population means lie
 somewhere between the bounds of the intervals, assuming that our model is good.
-
-
 
 :::::::::::::::::::::::::
 

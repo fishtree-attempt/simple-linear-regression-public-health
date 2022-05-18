@@ -6,7 +6,7 @@ exercises: 15
 ---
 
 ```{r, include=FALSE}
-load("../bin/data.RData")
+load("data/data.RData")
 library(ggplot2)
 library(jtools)
 library(dplyr)
@@ -142,8 +142,6 @@ and $x_1 = 0$ otherwise. Analogously,
 $x_2 = 1$ if an individual is depressed most days a week and
 $x_2 = 0$ otherwise.
 
-
-
 :::::::::::::::::::::::::
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -186,8 +184,6 @@ alongside their 95% confidence intervals. The mean estimates are
 represented by the `Intercept` for the non-depressed group and
 by `Intercept` + `DepressedSeveral` and `Intercept` + `DepressedMost` for
 the other groups.
-
-
 
 :::::::::::::::::::::::::
 
