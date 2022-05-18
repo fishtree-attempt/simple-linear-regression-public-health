@@ -1,63 +1,76 @@
 ---
 source: Rmd
-title: "An introduction to linear regression"
-objectives:
-  - "Identify questions that can be addressed with a simple linear regression model."
-  - "Describe the components that are involved in simple linear regression."
-keypoints:
-  - Simple linear regression requires one continuous dependent variable and one continuous or categorical explanatory variable. In addition, the assumptions of the model must hold.
-  - The components of the model describe the mean of the dependent variable as a function of the explanatory variables, the mean of the dependent variable at the 0-point of the explanatory variable and the effect of the explanatory variable on the mean of dependent variable. 
-questions:
-  - What type of variables are required for simple linear regression?
-  - What do each of the components in the equation of a simple linear regression model represent?
+title: An introduction to linear regression
 teaching: 10
 exercises: 10
 ---
 
 ```{r, include=FALSE}
-source("../bin/chunk-options.R")
-#source("../bin/obtain_data.R")
 load("../bin/data.RData")
-knitr_fig_path("01-")
 ```
 
+::::::::::::::::::::::::::::::::::::::: objectives
+
+- Identify questions that can be addressed with a simple linear regression model.
+- Describe the components that are involved in simple linear regression.
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
+
+:::::::::::::::::::::::::::::::::::::::: questions
+
+- What type of variables are required for simple linear regression?
+- What do each of the components in the equation of a simple linear regression model represent?
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
+
 ## Questions that can be addressed with simple linear regression
+
 Simple linear regression is commonly used, but when is it appropriate to apply this method? Broadly speaking, simple linear regression may be suitable when the following conditions hold:
 
-* You seek a *model* of the relationship between one *continuous* dependent variable and one *continuous* or *categorical* explanatory variable. 
-* Your data and simple linear regression model do not violate the assumptions of the simple linear regression model. We will cover these assumptions in the final episode of this lesson.
+- You seek a *model* of the relationship between one *continuous* dependent variable and one *continuous* or *categorical* explanatory variable.
+- Your data and simple linear regression model do not violate the assumptions of the simple linear regression model. We will cover these assumptions in the final episode of this lesson.
 
-> ## Exercise  
-> A colleague has started working with the NHANES data set. They approach 
-> you for advice on the use of simple linear regression on these data. 
-> Assuming that the assumptions of the simple linear regression model hold, which
-> of the following questions could potentially be tackled with a simple 
-> linear regression model? Think closely about the outcome and explanatory
-> variables, between which a relationship will be modelled to answer the 
-> research question.
->   
-> A) Does home ownership (whether a participant's home is owned or rented)
-> vary across income brackets in the general US population?  
-> B) Is there an association between BMI and pulse rate in the general US population?  
-> C) Do teenagers on average have a higher pulse rate than adults in the 
-> general US population?
-> 
-> > ## Solution
-> > A) The outcome variable is home ownership and the explanatory variable is 
-> > income bracket.
-> > Since home ownership is a categorical outcome variable, simple linear regression is not 
-> > a suitable way to answer this question.  
-> > B) Since both variables are continous, simple linear regression may be
-> > a suitable way to answer this question.  
-> > C) The outcome variable is pulse rate and the explanatory variable is age group
-> > (teenager vs adult). Since the outcome variable is 
-> > continuous and the explanatory variable is categorical, 
-> > simple linear regression may be a suitable way to answer this question.
-> {: .solution}
-{: .challenge}
+:::::::::::::::::::::::::::::::::::::::  challenge
 
+## Exercise
+
+A colleague has started working with the NHANES data set. They approach
+you for advice on the use of simple linear regression on these data.
+Assuming that the assumptions of the simple linear regression model hold, which
+of the following questions could potentially be tackled with a simple
+linear regression model? Think closely about the outcome and explanatory
+variables, between which a relationship will be modelled to answer the
+research question.
+
+A) Does home ownership (whether a participant's home is owned or rented)
+vary across income brackets in the general US population?  
+B) Is there an association between BMI and pulse rate in the general US population?  
+C) Do teenagers on average have a higher pulse rate than adults in the
+general US population?
+
+:::::::::::::::  solution
+
+## Solution
+
+A) The outcome variable is home ownership and the explanatory variable is
+income bracket.
+Since home ownership is a categorical outcome variable, simple linear regression is not
+a suitable way to answer this question.  
+B) Since both variables are continous, simple linear regression may be
+a suitable way to answer this question.  
+C) The outcome variable is pulse rate and the explanatory variable is age group
+(teenager vs adult). Since the outcome variable is
+continuous and the explanatory variable is categorical,
+simple linear regression may be a suitable way to answer this question.
+
+
+
+:::::::::::::::::::::::::
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
 
 ## The simple linear regression equation
+
 The simple linear regression model can be described by the following equation:
 
 $$
@@ -66,30 +79,49 @@ $$
 
 The outcome variable is denoted by $y$ and the explanatory variable is denoted by $x_1$. Simple linear regression models the *expectation* of $y$, i.e. $E(y)$. This is another way of referring to the *mean* of $y$. The expectation of $y$ is a function of $\beta_0$ and $\beta_1 \times x_1$. The intercept is denoted by $\beta_0$ - this is the value of $E(y)$ when the explanatory variable, $x_1$, equals 0. The effect of our explanatory variable is denoted by $\beta_1$ - for every one-unit increase in $x_1$, $E(y)$ changes by $\beta_1$.
 
+Before fitting the model, we have access to $y$ and $x_1$ values for each observation in our data. For example, we may want to model the relationship between weight and height. $y$ would represent weight and $x_1$ would represent height. After we fit the model, R will return to us values of $\beta_0$ and $\beta_1$ - these are *estimated* using our data.
 
-Before fitting the model, we have access to $y$ and $x_1$ values for each observation in our data. For example, we may want to model the relationship between weight and height. $y$ would represent weight and $x_1$ would represent height. After we fit the model, R will return to us values of $\beta_0$ and $\beta_1$ - these are *estimated* using our data. 
+:::::::::::::::::::::::::::::::::::::::  challenge
 
-> ## Exercise  
-> We are asked to study the effect of participant's age on their BMI. We are given the following equation of a simple linear regression to use:  
-> 
-> $$E(y) = \beta_0 + \beta_1 \times x_1$$.    
-> 
-> Match the following components of this simple linear regression model to their
-> descriptions:  
-> 1. $E(y)$  
-> 2. ${\beta}_0$  
-> 3. $x_1$
-> 4. ${\beta}_1$  
->  
-> A) Mean BMI at a particular value of age.   
-> B) The expected BMI when the age equals 0.    
-> C) The expected change in BMI with a one-unit increase in age.  
-> D) A specific value of age.
->  
-> > ## Solution
-> > A) 1   
-> > B) 2  
-> > C) 4  
-> > D) 3  
-> {: .solution}
-{: .challenge}
+## Exercise
+
+We are asked to study the effect of participant's age on their BMI. We are given the following equation of a simple linear regression to use:
+
+$$E(y) = \\beta\_0 + \\beta\_1 \\times x\_1$$.
+
+Match the following components of this simple linear regression model to their
+descriptions:
+
+1. $E(y)$
+2. ${\beta}_0$
+3. $x_1$
+4. ${\beta}_1$
+
+A) Mean BMI at a particular value of age.  
+B) The expected BMI when the age equals 0.  
+C) The expected change in BMI with a one-unit increase in age.  
+D) A specific value of age.
+
+:::::::::::::::  solution
+
+## Solution
+
+A) 1  
+B) 2  
+C) 4  
+D) 3  
+
+
+
+:::::::::::::::::::::::::
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
+
+:::::::::::::::::::::::::::::::::::::::: keypoints
+
+- Simple linear regression requires one continuous dependent variable and one continuous or categorical explanatory variable. In addition, the assumptions of the model must hold.
+- The components of the model describe the mean of the dependent variable as a function of the explanatory variables, the mean of the dependent variable at the 0-point of the explanatory variable and the effect of the explanatory variable on the mean of dependent variable.
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
+
+
