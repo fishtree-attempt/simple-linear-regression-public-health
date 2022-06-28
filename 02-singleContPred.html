@@ -81,7 +81,7 @@
           <button class="nav-link dropdown-toggle" id="navbarDropdown" data-bs-toggle="dropdown" aria-expanded="false">
             More <i data-feather="chevron-down"></i>
           </button>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown"><li><a class="dropdown-item" href="profiles.html">Learner Profiles</a></li><li><a class="dropdown-item" href="discuss.html">Discussion</a></li><li><a class="dropdown-item" href="figures.html">Figures</a></li><li><a class="dropdown-item" href="reference.html"></a></li>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown"><li><a class="dropdown-item" href="discuss.html">Discussion</a></li><li><a class="dropdown-item" href="figures.html">Figures</a></li><li><a class="dropdown-item" href="reference.html"></a></li>
           </ul></li>
       </ul></div>
     <form class="d-flex col-md-2 search-form">
@@ -230,13 +230,21 @@
                 </h2>
                 <div id="flush-collapseTwelve" class="accordion-collapse collapse" aria-labelledby="flush-headingTwelve" data-bs-parent="#accordionFlush12">
                   <div class="accordion-body">
-                    <ul><li><a href="profiles.html">Learner Profiles</a></li><li><a href="discuss.html">Discussion</a></li><li><a href="figures.html">Figures</a></li><li><a href="reference.html"></a></li>
+                    <ul><li>
+                        <a href="key-points.html">Key Points</a>
+                      </li>
+                      <li>
+                        <a href="reference.html#glossary">Glossary</a>
+                      </li>
+                      <li>
+                        <a href="profiles.html">Learner Profiles</a>
+                      </li>
+                      <li><a href="discuss.html">Discussion</a></li><li><a href="figures.html">Figures</a></li><li><a href="reference.html"></a></li>
                     </ul></div>
                 </div>
               </div>
             </div>
-
-            <a href="aio.html">See all in one page</a>
+            <hr class="half-width resources"><a href="aio.html">See all in one page</a>
 
             <hr class="d-none d-sm-block d-md-none"><div class="d-grid gap-1">
             
@@ -301,12 +309,12 @@
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">dat</span> <span class="op">%&gt;%</span>
-  <span class="fu">filter</span><span class="op">(</span><span class="va">Age</span> <span class="op">&gt;</span> <span class="fl">17</span><span class="op">)</span> <span class="op">%&gt;%</span>
-  <span class="fu">ggplot</span><span class="op">(</span><span class="fu">aes</span><span class="op">(</span>x <span class="op">=</span> <span class="va">Height</span>, y <span class="op">=</span> <span class="va">Weight</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span>
-  <span class="fu">geom_point</span><span class="op">(</span><span class="op">)</span> <span class="op">+</span>
-  <span class="fu">xlab</span><span class="op">(</span><span class="st">"Height (cm)"</span><span class="op">)</span> <span class="op">+</span>
-  <span class="fu">ylab</span><span class="op">(</span><span class="st">"Weight (kg)"</span><span class="op">)</span></code></pre>
+<code class="sourceCode R"><span><span class="va">dat</span> <span class="op">%&gt;%</span></span>
+<span>  <span class="fu">filter</span><span class="op">(</span><span class="va">Age</span> <span class="op">&gt;</span> <span class="fl">17</span><span class="op">)</span> <span class="op">%&gt;%</span></span>
+<span>  <span class="fu">ggplot</span><span class="op">(</span><span class="fu">aes</span><span class="op">(</span>x <span class="op">=</span> <span class="va">Height</span>, y <span class="op">=</span> <span class="va">Weight</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu">geom_point</span><span class="op">(</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu">xlab</span><span class="op">(</span><span class="st">"Height (cm)"</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu">ylab</span><span class="op">(</span><span class="st">"Weight (kg)"</span><span class="op">)</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">WARNING<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -340,12 +348,12 @@
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">dat</span> <span class="op">%&gt;%</span>
-  <span class="fu">filter</span><span class="op">(</span><span class="va">Age</span> <span class="op">&gt;</span> <span class="fl">17</span><span class="op">)</span> <span class="op">%&gt;%</span>
-  <span class="fu">ggplot</span><span class="op">(</span><span class="fu">aes</span><span class="op">(</span>x <span class="op">=</span> <span class="va">AgeMonths</span>, y <span class="op">=</span> <span class="va">BPSysAve</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span>
-  <span class="fu">geom_point</span><span class="op">(</span><span class="op">)</span> <span class="op">+</span>
-  <span class="fu">ylab</span><span class="op">(</span><span class="st">"Average systolic blood pressure (mmHg)"</span><span class="op">)</span> <span class="op">+</span>
-  <span class="fu">xlab</span><span class="op">(</span><span class="st">"Age (months)"</span><span class="op">)</span></code></pre>
+<code class="sourceCode R"><span><span class="va">dat</span> <span class="op">%&gt;%</span></span>
+<span>  <span class="fu">filter</span><span class="op">(</span><span class="va">Age</span> <span class="op">&gt;</span> <span class="fl">17</span><span class="op">)</span> <span class="op">%&gt;%</span></span>
+<span>  <span class="fu">ggplot</span><span class="op">(</span><span class="fu">aes</span><span class="op">(</span>x <span class="op">=</span> <span class="va">AgeMonths</span>, y <span class="op">=</span> <span class="va">BPSysAve</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu">geom_point</span><span class="op">(</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu">ylab</span><span class="op">(</span><span class="st">"Average systolic blood pressure (mmHg)"</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu">xlab</span><span class="op">(</span><span class="st">"Age (months)"</span><span class="op">)</span></span></code></pre>
 </div>
 <figure><img src="fig/02-singleContPred-rendered-explore%20BPSysAve%20vs%20AgeMonths-1.png" style="display: block; margin: auto;" class="figure mx-auto d-block"></figure></div>
 </div>
@@ -357,9 +365,9 @@
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">Weight_Height_lm</span> <span class="op">&lt;-</span> <span class="va">dat</span> <span class="op">%&gt;%</span>
-  <span class="fu">filter</span><span class="op">(</span><span class="va">Age</span> <span class="op">&gt;</span> <span class="fl">17</span><span class="op">)</span> <span class="op">%&gt;%</span>
-  <span class="fu">lm</span><span class="op">(</span>formula <span class="op">=</span> <span class="va">Weight</span> <span class="op">~</span> <span class="va">Height</span><span class="op">)</span></code></pre>
+<code class="sourceCode R"><span><span class="va">Weight_Height_lm</span> <span class="op">&lt;-</span> <span class="va">dat</span> <span class="op">%&gt;%</span></span>
+<span>  <span class="fu">filter</span><span class="op">(</span><span class="va">Age</span> <span class="op">&gt;</span> <span class="fl">17</span><span class="op">)</span> <span class="op">%&gt;%</span></span>
+<span>  <span class="fu">lm</span><span class="op">(</span>formula <span class="op">=</span> <span class="va">Weight</span> <span class="op">~</span> <span class="va">Height</span><span class="op">)</span></span></code></pre>
 </div>
 <p>We will interpret our results using a summary table and a plot. The summary table can be obtained using the <code>summ()</code> function from the <code>jtools</code> package. We provide the function with the name of our model (<code>Weight_Height_lm</code>). We can also specify that we want confidence intervals for our parameter estimates using <code>confint = TRUE</code>. Finally, we specify that we want estimates with three digits after the decimal point with <code>digits = 3</code>.</p>
 <p>We will come to interpreting the <code>Model Fit</code> section in a later episode. For now, take a look at the parameter estimates at the bottom of the output. We see that the intercept (i.e. <span class="math inline">\(\beta_0\)</span>) is estimated at -70.194 and the effect of <code>Height</code> (i.e. <span class="math inline">\(\beta_1\)</span>) is estimated at 0.901. The model therefore predicts an average increase in <code>Weight</code> of 0.901 kg for every 1 cm increase in <code>Height</code>.</p>
@@ -367,7 +375,7 @@
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu">summ</span><span class="op">(</span><span class="va">Weight_Height_lm</span>, confint <span class="op">=</span> <span class="cn">TRUE</span>, digits <span class="op">=</span> <span class="fl">3</span><span class="op">)</span></code></pre>
+<code class="sourceCode R"><span><span class="fu">summ</span><span class="op">(</span><span class="va">Weight_Height_lm</span>, confint <span class="op">=</span> <span class="cn">TRUE</span>, digits <span class="op">=</span> <span class="fl">3</span><span class="op">)</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -435,11 +443,11 @@ Height                0.901     0.853     0.948    37.393   0.000
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">BPSysAve_AgeMonths_lm</span> <span class="op">&lt;-</span> <span class="va">dat</span> <span class="op">%&gt;%</span> 
-  <span class="fu">filter</span><span class="op">(</span><span class="va">Age</span> <span class="op">&gt;</span> <span class="fl">17</span><span class="op">)</span> <span class="op">%&gt;%</span>
-  <span class="fu">lm</span><span class="op">(</span>formula <span class="op">=</span> <span class="va">BPSysAve</span> <span class="op">~</span> <span class="va">AgeMonths</span><span class="op">)</span>
-
-<span class="fu">summ</span><span class="op">(</span><span class="va">BPSysAve_AgeMonths_lm</span>, confint <span class="op">=</span> <span class="cn">TRUE</span>, digits<span class="op">=</span><span class="fl">3</span><span class="op">)</span></code></pre>
+<code class="sourceCode R"><span><span class="va">BPSysAve_AgeMonths_lm</span> <span class="op">&lt;-</span> <span class="va">dat</span> <span class="op">%&gt;%</span> </span>
+<span>  <span class="fu">filter</span><span class="op">(</span><span class="va">Age</span> <span class="op">&gt;</span> <span class="fl">17</span><span class="op">)</span> <span class="op">%&gt;%</span></span>
+<span>  <span class="fu">lm</span><span class="op">(</span>formula <span class="op">=</span> <span class="va">BPSysAve</span> <span class="op">~</span> <span class="va">AgeMonths</span><span class="op">)</span></span>
+<span></span>
+<span><span class="fu">summ</span><span class="op">(</span><span class="va">BPSysAve_AgeMonths_lm</span>, confint <span class="op">=</span> <span class="cn">TRUE</span>, digits<span class="op">=</span><span class="fl">3</span><span class="op">)</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -476,10 +484,10 @@ AgeMonths             0.033     0.030     0.035    23.588   0.000
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu">effect_plot</span><span class="op">(</span><span class="va">Weight_Height_lm</span>, pred <span class="op">=</span> <span class="va">Height</span>, plot.points <span class="op">=</span> <span class="cn">TRUE</span>,
-            interval <span class="op">=</span> <span class="cn">TRUE</span>, colors <span class="op">=</span> <span class="st">"red"</span><span class="op">)</span> <span class="op">+</span>
-  <span class="fu">xlab</span><span class="op">(</span><span class="st">"Height (cm)"</span><span class="op">)</span> <span class="op">+</span>
-  <span class="fu">ylab</span><span class="op">(</span><span class="st">"Weight (kg)"</span><span class="op">)</span></code></pre>
+<code class="sourceCode R"><span><span class="fu">effect_plot</span><span class="op">(</span><span class="va">Weight_Height_lm</span>, pred <span class="op">=</span> <span class="va">Height</span>, plot.points <span class="op">=</span> <span class="cn">TRUE</span>,</span>
+<span>            interval <span class="op">=</span> <span class="cn">TRUE</span>, colors <span class="op">=</span> <span class="st">"red"</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu">xlab</span><span class="op">(</span><span class="st">"Height (cm)"</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu">ylab</span><span class="op">(</span><span class="st">"Weight (kg)"</span><span class="op">)</span></span></code></pre>
 </div>
 <figure><img src="fig/02-singleContPred-rendered-effect%20plot%20weight%20vs%20height-1.png" style="display: block; margin: auto;" class="figure mx-auto d-block"></figure><div id="challenge3" class="callout challenge">
 <div class="callout-square">
@@ -505,10 +513,10 @@ AgeMonths             0.033     0.030     0.035    23.588   0.000
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu">effect_plot</span><span class="op">(</span><span class="va">BPSysAve_AgeMonths_lm</span>, pred <span class="op">=</span> <span class="va">AgeMonths</span>, plot.points <span class="op">=</span> <span class="cn">TRUE</span>,
-            interval <span class="op">=</span> <span class="cn">TRUE</span>, colors <span class="op">=</span> <span class="st">"red"</span><span class="op">)</span> <span class="op">+</span>
-  <span class="fu">xlab</span><span class="op">(</span><span class="st">"Age (months)"</span><span class="op">)</span> <span class="op">+</span> 
-  <span class="fu">ylab</span><span class="op">(</span><span class="st">"Average systolic blood pressure (mmHg)"</span><span class="op">)</span></code></pre>
+<code class="sourceCode R"><span><span class="fu">effect_plot</span><span class="op">(</span><span class="va">BPSysAve_AgeMonths_lm</span>, pred <span class="op">=</span> <span class="va">AgeMonths</span>, plot.points <span class="op">=</span> <span class="cn">TRUE</span>,</span>
+<span>            interval <span class="op">=</span> <span class="cn">TRUE</span>, colors <span class="op">=</span> <span class="st">"red"</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu">xlab</span><span class="op">(</span><span class="st">"Age (months)"</span><span class="op">)</span> <span class="op">+</span> </span>
+<span>  <span class="fu">ylab</span><span class="op">(</span><span class="st">"Average systolic blood pressure (mmHg)"</span><span class="op">)</span></span></code></pre>
 </div>
 <figure><img src="fig/02-singleContPred-rendered-unnamed-chunk-2-1.png" style="display: block; margin: auto;" class="figure mx-auto d-block"></figure></div>
 </div>
@@ -552,9 +560,9 @@ AgeMonths             0.033     0.030     0.035    23.588   0.000
         <p>Materials licensed under <a href="LICENSE.html">CC-BY 4.0</a> by the authors</p>
         
         <p><a href="https://creativecommons.org/licenses/by-sa/4.0/" class="external-link">Template licensed under CC-BY 4.0</a> by <a href="https://carpentries.org" class="external-link">The Carpentries</a></p>
-        <p>Built with <a href="https://github.com/carpentries/sandpaper/tree/0.6.0" class="external-link">sandpaper (0.6.0)</a>,
+        <p>Built with <a href="https://github.com/carpentries/sandpaper/tree/0.6.2" class="external-link">sandpaper (0.6.2)</a>,
         <a href="https://github.com/carpentries/pegboard/tree/0.3.0" class="external-link">pegboard (0.3.0)</a>,
-      and <a href="https://github.com/carpentries/varnish/tree/0.2.0" class="external-link">varnish (0.2.0)</a>.</p>
+      and <a href="https://github.com/carpentries/varnish/tree/0.2.1" class="external-link">varnish (0.2.1)</a>.</p>
 			</div>
 		</footer></div> <!-- / div.container -->
 	<div id="to-top">
@@ -576,7 +584,7 @@ AgeMonths             0.033     0.030     0.035    23.588   0.000
   "identifier": "https://fishtree-attempt.github.io/simple-linear-regression-public-health/02-singleContPred.html",
   "dateCreated": "2022-06-20",
   "dateModified": "2022-05-18",
-  "datePublished": "2022-06-21"
+  "datePublished": "2022-06-28"
 }
 
   </script><script>
