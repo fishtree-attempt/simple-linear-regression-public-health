@@ -1,3 +1,8 @@
+> **ATTENTION** This is an experimental test of [The Carpentries Workbench](https://carpentries.github.io/workbench) lesson infrastructure.
+> It was automatically converted from the source lesson via [the lesson transition script](https://github.com/carpentries/lesson-transition/).
+> 
+> If anything seems off, please contact Zhian Kamvar [zkamvar@carpentries.org](mailto:zkamvar@carpentries.org)
+
 # Statistical analysis for public health
 
 ## Contributing
@@ -13,19 +18,19 @@ Please see the current list of [issues](../../issues) for ideas for contributing
 repository. For making your contribution, we use the GitHub flow, which is
 nicely explained in the chapter [Contributing to a Project](http://git-scm.com/book/en/v2/GitHub-Contributing-to-a-Project) in Pro Git
 by Scott Chacon.
-Look for the tag ![good_first_issue](https://img.shields.io/badge/-good%20first%20issue-gold.svg). This indicates that the maintainers will welcome a pull request fixing this issue.
+Look for the tag ![good\_first\_issue](https://img.shields.io/badge/-good%20first%20issue-gold.svg). This indicates that the maintainers will welcome a pull request fixing this issue.
 
+## Authors \& Maintainers
 
-## Authors & Maintainers 
-
-* [Ezra Herman](https://github.com/ezherman) (University of York)
-* [Emma Rand](https://github.com/3mmaRand) (University of York)
-* [Andrew Stewart](https://github.com/ajstewartlang) (University of Manchester)
+- [Ezra Herman](https://github.com/ezherman) (University of York)
+- [Emma Rand](https://github.com/3mmaRand) (University of York)
+- [Andrew Stewart](https://github.com/ajstewartlang) (University of Manchester)
 
 ## Citation
 
 To cite this lesson, please consult with [CITATION](CITATION)
 
-[cdh]: https://cdh.carpentries.org
-[community-lessons]: https://carpentries.org/community-lessons
 [lesson-example]: https://carpentries.github.io/lesson-example
+
+
+
