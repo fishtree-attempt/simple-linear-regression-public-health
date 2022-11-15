@@ -6,7 +6,7 @@ exercises: 25
 ---
 
 ```{r, include=FALSE}
-load("../bin/data.RData")
+load("data/data.RData")
 ```
 
 ::::::::::::::::::::::::::::::::::::::: objectives
@@ -127,7 +127,6 @@ of the *uncertainty* around our estimate for $\beta_1$. The narrower the 95% CI,
 the more certain we are that our estimate for $\beta_1$ is close to the population
 mean for $\beta_1$.
 
-
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
 :::::::::::::::::::::::::::::::::::::::  challenge
@@ -165,9 +164,7 @@ summ(BPSysAve_AgeMonths_lm, confint = TRUE, digits=3)
 
 A) 101.8 mmHg.  
 B) Increase by 0.033 mmHg/month.  
-C) $E(\text{Average systolic blood pressure}) = 101.8 + 0.033 \times \text{Age in Months}$.  
-
-
+C) $E(\text{Average systolic blood pressure}) = 101.8 + 0.033 \times \text{Age in Months}$.
 
 :::::::::::::::::::::::::
 

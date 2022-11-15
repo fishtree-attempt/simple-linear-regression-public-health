@@ -6,7 +6,7 @@ exercises: 80
 ---
 
 ```{r, include=FALSE}
-load("../bin/data.RData")
+load("data/data.RData")
 library(ggplot2)
 library(dplyr)
 library(jtools)
@@ -183,8 +183,6 @@ approximately `r round(summary(BPSysAve_AgeMonths_lm)$r.squared, digits = 2) * 1
 `BPSysAve`. Our model explains `r round(summary(BPSysAve_AgeMonths_lm)$r.squared, digits = 2) * 100`% of the variation on `BPSysAve`, which
 a model that always predicts the mean would not.
 
-
-
 :::::::::::::::::::::::::
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -221,8 +219,6 @@ the research question.
 A) There is more to general health than `BMI` alone. In this case, we may wish to use a different outcome variable. Alternatively, we could make the research question more specific by specifying that we are studying the effect of `Age` on `BMI` rather than general health.  
 B) Since we are specifically asked to study the effect of `Age` on general health, we may conclude that no further explanatory variables are relevant to the research question. However, there may still be explanatory variables that are important to include, such as income or sex, if the effect of `Age` on general health depends on other explanatory variables. This will be covered in the [next lesson](https://carpentries-incubator.github.io/multiple-linear-regression-public-health/).  
 C) Since the NHANES data was collected from individuals in the US, this data may not be suitable for a research question relating to individuals in South-America.
-
-
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
@@ -267,8 +263,6 @@ this data violate the representativeness assumption?
 
 A) Since the sample appears to be a subset of the population of interest, the case of interest criterium would not be violated.  
 B) Since the sample is not representative of the population of interest, the representativeness assumption would be violated. Including a variable for gender may solve the violation. See the [multiple linear regression lesson](https://carpentries-incubator.github.io/multiple-linear-regression-public-health) for details on how to include multiple variables in linear regression.
-
-
 
 :::::::::::::::::::::::::
 
@@ -319,17 +313,21 @@ Firstly, fit a linear regression model of Weight (`Weight`) as a function
 of Height (`Height`) in children (participants below the Age (`Age`) of 18).
 Then, create an effect plot using `effect_plot()`.
 
-> ## Solution
-> 
-> ```{r non-linearity challenge part 1, warning=FALSE}
-> child_Weight_Height_lm <- dat %>%
->   filter(Age < 18) %>%
->   lm(formula = Weight ~ Height)
-> 
-> effect_plot(child_Weight_Height_lm, pred = Height, 
->                   plot.points = TRUE, interval = TRUE,
->                   line.colors = "magenta") 
-> ```
+:::::::::::::::  solution
+
+## Solution
+
+```{r non-linearity challenge part 1, warning=FALSE}
+child_Weight_Height_lm <- dat %>%
+  filter(Age < 18) %>%
+  lm(formula = Weight ~ Height)
+
+effect_plot(child_Weight_Height_lm, pred = Height, 
+                  plot.points = TRUE, interval = TRUE,
+                  line.colors = "magenta") 
+```
+
+:::::::::::::::::::::::::
 
 There is curvature in the data, which makes a straight line unsuitable.
 
@@ -355,8 +353,6 @@ effect_plot(child_logWeight_Height_lm, pred = Height,
 
 The non-linear relationship has now been transformed into a more linear
 relationship by taking the log transformation of the response variable.
-
-
 
 :::::::::::::::::::::::::
 
@@ -393,8 +389,6 @@ C) We are modeling the effect of income on home size in a random sample of the a
 A) Since we have multiple observations per participant, our observations are not independent. We would hereby violate the independent errors assumption.  
 B) Our observations are non-independent because multiple individuals will have belonged to the same carehome. In this case, adding carehome to our model would allow us to overcome the violation of the independent errors assumption.  
 C) Since our data is a random sample, we are not violating the independent errors assumption through non-independence in our data.
-
-
 
 :::::::::::::::::::::::::
 
@@ -478,9 +472,7 @@ violate the homoscedasticity assumption. Because the majority of residuals
 still lie in the central band, we may not worry about this violation much.
 However, if we wanted to resolve the increase in residuals, we may choose
 to add more variables to our model or to apply a Box-Cox transformation
-on `BPSysAve`.  
-
-
+on `BPSysAve`.
 
 :::::::::::::::::::::::::
 
@@ -527,8 +519,6 @@ ggplot(residuals, aes(x=resid)) +
 ```
 
 Since the distribution is only slightly skewed, we do not have to worry about violating the normality assumption.
-
-
 
 :::::::::::::::::::::::::
 

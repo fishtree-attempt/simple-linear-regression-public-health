@@ -6,7 +6,7 @@ exercises: 25
 ---
 
 ```{r, include=FALSE}
-load("../bin/data.RData")
+load("data/data.RData")
 library(ggplot2)
 library(dplyr)
 library(tidyr)
@@ -63,7 +63,6 @@ mean for each vector (each `SmokeNow` group). `fun.data` expects a dataset
 (which may be a simple vector) and provides three values for each dataset: `y`,
 `ymin` and `ymax`. In our case, ymin is lower bound of the confidence interval
 and ymax is the upper bound of the confidence interval.
-
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
@@ -155,8 +154,6 @@ C) $E(\text{BPSysAve}) = 122.892 - 5.002 \times x_1$,
 where $x_1 = 0$ if an individual is not physically active
 and $x_1 = 1$ if an individual is physically active.
 
-
-
 :::::::::::::::::::::::::
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -199,7 +196,6 @@ As a result, if many points are plotted on top of each other, this area
 shows up with darker dots. Including opacity allows us to see where many of
 the points lie, which is handy with big public health data sets.
 
-
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
 :::::::::::::::::::::::::::::::::::::::  challenge
@@ -227,8 +223,6 @@ This plot shows the mean estimates for `BPSysAve` for the two groups,
 alongside their 95% confidence intervals. The mean estimates are
 represented by the `Intercept` for the non-physically active group and
 by `Intercept` + `PhysActiveYes` for the physically active group.
-
-
 
 :::::::::::::::::::::::::
 
