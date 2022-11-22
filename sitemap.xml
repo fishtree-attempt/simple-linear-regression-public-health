@@ -1,105 +1,129 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://preview.carpentries.org/simple-linear-regression-public-health01-introSLR.html</loc>
+    <loc>https://preview.carpentries.org/simple-linear-regression-public-health/01-introSLR.html</loc>
   </url>
   <url>
-    <loc>https://preview.carpentries.org/simple-linear-regression-public-health02-singleContPred.html</loc>
+    <loc>https://preview.carpentries.org/simple-linear-regression-public-health/02-singleContPred.html</loc>
   </url>
   <url>
-    <loc>https://preview.carpentries.org/simple-linear-regression-public-health03-twoLvlFactor.html</loc>
+    <loc>https://preview.carpentries.org/simple-linear-regression-public-health/03-twoLvlFactor.html</loc>
   </url>
   <url>
-    <loc>https://preview.carpentries.org/simple-linear-regression-public-health04-predictionSLR.html</loc>
+    <loc>https://preview.carpentries.org/simple-linear-regression-public-health/04-predictionSLR.html</loc>
   </url>
   <url>
-    <loc>https://preview.carpentries.org/simple-linear-regression-public-health05-fitAndAssumptionSLR.html</loc>
+    <loc>https://preview.carpentries.org/simple-linear-regression-public-health/05-fitAndAssumptionSLR.html</loc>
   </url>
   <url>
-    <loc>https://preview.carpentries.org/simple-linear-regression-public-health06-multiLvlFactor.html</loc>
+    <loc>https://preview.carpentries.org/simple-linear-regression-public-health/06-multiLvlFactor.html</loc>
   </url>
   <url>
-    <loc>https://preview.carpentries.org/simple-linear-regression-public-healthCODE_OF_CONDUCT.html</loc>
+    <loc>https://preview.carpentries.org/simple-linear-regression-public-health/CODE_OF_CONDUCT.html</loc>
   </url>
   <url>
-    <loc>https://preview.carpentries.org/simple-linear-regression-public-healthLICENSE.html</loc>
+    <loc>https://preview.carpentries.org/simple-linear-regression-public-health/LICENSE.html</loc>
   </url>
   <url>
-    <loc>https://preview.carpentries.org/simple-linear-regression-public-healthabout.html</loc>
+    <loc>https://preview.carpentries.org/simple-linear-regression-public-health/about.html</loc>
   </url>
   <url>
-    <loc>https://preview.carpentries.org/simple-linear-regression-public-healthdata.html</loc>
+    <loc>https://preview.carpentries.org/simple-linear-regression-public-health/aio.html</loc>
   </url>
   <url>
-    <loc>https://preview.carpentries.org/simple-linear-regression-public-healthdiscuss.html</loc>
+    <loc>https://preview.carpentries.org/simple-linear-regression-public-health/data.html</loc>
   </url>
   <url>
-    <loc>https://preview.carpentries.org/simple-linear-regression-public-healthfigures.html</loc>
+    <loc>https://preview.carpentries.org/simple-linear-regression-public-health/discuss.html</loc>
   </url>
   <url>
-    <loc>https://preview.carpentries.org/simple-linear-regression-public-healthguide.html</loc>
+    <loc>https://preview.carpentries.org/simple-linear-regression-public-health/figures.html</loc>
   </url>
   <url>
-    <loc>https://preview.carpentries.org/simple-linear-regression-public-healthindex.html</loc>
+    <loc>https://preview.carpentries.org/simple-linear-regression-public-health/guide.html</loc>
   </url>
   <url>
-    <loc>https://preview.carpentries.org/simple-linear-regression-public-healthinstructor/01-introSLR.html</loc>
+    <loc>https://preview.carpentries.org/simple-linear-regression-public-health/images.html</loc>
   </url>
   <url>
-    <loc>https://preview.carpentries.org/simple-linear-regression-public-healthinstructor/02-singleContPred.html</loc>
+    <loc>https://preview.carpentries.org/simple-linear-regression-public-health/index.html</loc>
   </url>
   <url>
-    <loc>https://preview.carpentries.org/simple-linear-regression-public-healthinstructor/03-twoLvlFactor.html</loc>
+    <loc>https://preview.carpentries.org/simple-linear-regression-public-health/instructor/01-introSLR.html</loc>
   </url>
   <url>
-    <loc>https://preview.carpentries.org/simple-linear-regression-public-healthinstructor/04-predictionSLR.html</loc>
+    <loc>https://preview.carpentries.org/simple-linear-regression-public-health/instructor/02-singleContPred.html</loc>
   </url>
   <url>
-    <loc>https://preview.carpentries.org/simple-linear-regression-public-healthinstructor/05-fitAndAssumptionSLR.html</loc>
+    <loc>https://preview.carpentries.org/simple-linear-regression-public-health/instructor/03-twoLvlFactor.html</loc>
   </url>
   <url>
-    <loc>https://preview.carpentries.org/simple-linear-regression-public-healthinstructor/06-multiLvlFactor.html</loc>
+    <loc>https://preview.carpentries.org/simple-linear-regression-public-health/instructor/04-predictionSLR.html</loc>
   </url>
   <url>
-    <loc>https://preview.carpentries.org/simple-linear-regression-public-healthinstructor/CODE_OF_CONDUCT.html</loc>
+    <loc>https://preview.carpentries.org/simple-linear-regression-public-health/instructor/05-fitAndAssumptionSLR.html</loc>
   </url>
   <url>
-    <loc>https://preview.carpentries.org/simple-linear-regression-public-healthinstructor/LICENSE.html</loc>
+    <loc>https://preview.carpentries.org/simple-linear-regression-public-health/instructor/06-multiLvlFactor.html</loc>
   </url>
   <url>
-    <loc>https://preview.carpentries.org/simple-linear-regression-public-healthinstructor/about.html</loc>
+    <loc>https://preview.carpentries.org/simple-linear-regression-public-health/instructor/CODE_OF_CONDUCT.html</loc>
   </url>
   <url>
-    <loc>https://preview.carpentries.org/simple-linear-regression-public-healthinstructor/data.html</loc>
+    <loc>https://preview.carpentries.org/simple-linear-regression-public-health/instructor/LICENSE.html</loc>
   </url>
   <url>
-    <loc>https://preview.carpentries.org/simple-linear-regression-public-healthinstructor/discuss.html</loc>
+    <loc>https://preview.carpentries.org/simple-linear-regression-public-health/instructor/about.html</loc>
   </url>
   <url>
-    <loc>https://preview.carpentries.org/simple-linear-regression-public-healthinstructor/figures.html</loc>
+    <loc>https://preview.carpentries.org/simple-linear-regression-public-health/instructor/aio.html</loc>
   </url>
   <url>
-    <loc>https://preview.carpentries.org/simple-linear-regression-public-healthinstructor/guide.html</loc>
+    <loc>https://preview.carpentries.org/simple-linear-regression-public-health/instructor/data.html</loc>
   </url>
   <url>
-    <loc>https://preview.carpentries.org/simple-linear-regression-public-healthinstructor/index.html</loc>
+    <loc>https://preview.carpentries.org/simple-linear-regression-public-health/instructor/discuss.html</loc>
   </url>
   <url>
-    <loc>https://preview.carpentries.org/simple-linear-regression-public-healthinstructor/profiles.html</loc>
+    <loc>https://preview.carpentries.org/simple-linear-regression-public-health/instructor/figures.html</loc>
   </url>
   <url>
-    <loc>https://preview.carpentries.org/simple-linear-regression-public-healthinstructor/reference.html</loc>
+    <loc>https://preview.carpentries.org/simple-linear-regression-public-health/instructor/guide.html</loc>
   </url>
   <url>
-    <loc>https://preview.carpentries.org/simple-linear-regression-public-healthinstructor/setup.html</loc>
+    <loc>https://preview.carpentries.org/simple-linear-regression-public-health/instructor/images.html</loc>
   </url>
   <url>
-    <loc>https://preview.carpentries.org/simple-linear-regression-public-healthprofiles.html</loc>
+    <loc>https://preview.carpentries.org/simple-linear-regression-public-health/instructor/index.html</loc>
   </url>
   <url>
-    <loc>https://preview.carpentries.org/simple-linear-regression-public-healthreference.html</loc>
+    <loc>https://preview.carpentries.org/simple-linear-regression-public-health/instructor/instructor-notes.html</loc>
   </url>
   <url>
-    <loc>https://preview.carpentries.org/simple-linear-regression-public-healthsetup.html</loc>
+    <loc>https://preview.carpentries.org/simple-linear-regression-public-health/instructor/key-points.html</loc>
+  </url>
+  <url>
+    <loc>https://preview.carpentries.org/simple-linear-regression-public-health/instructor/profiles.html</loc>
+  </url>
+  <url>
+    <loc>https://preview.carpentries.org/simple-linear-regression-public-health/instructor/reference.html</loc>
+  </url>
+  <url>
+    <loc>https://preview.carpentries.org/simple-linear-regression-public-health/instructor/setup.html</loc>
+  </url>
+  <url>
+    <loc>https://preview.carpentries.org/simple-linear-regression-public-health/instructor-notes.html</loc>
+  </url>
+  <url>
+    <loc>https://preview.carpentries.org/simple-linear-regression-public-health/key-points.html</loc>
+  </url>
+  <url>
+    <loc>https://preview.carpentries.org/simple-linear-regression-public-health/profiles.html</loc>
+  </url>
+  <url>
+    <loc>https://preview.carpentries.org/simple-linear-regression-public-health/reference.html</loc>
+  </url>
+  <url>
+    <loc>https://preview.carpentries.org/simple-linear-regression-public-health/setup.html</loc>
   </url>
 </urlset>
