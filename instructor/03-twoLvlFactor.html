@@ -177,7 +177,7 @@
       <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsecurrent" aria-expanded="true" aria-controls="flush-collapsecurrent">
         <span class="visually-hidden">Current Chapter</span>
         <span class="current-chapter">
-        Linear regression with a two-level factor explanatory variable
+        3. Linear regression with a two-level factor explanatory variable
         </span>
       </button>
     </div><!--/div.accordion-header-->
@@ -358,13 +358,13 @@ groups. We overlay the means and their 95% confidence intervals using
 <span>  <span class="fu">xlab</span><span class="op">(</span><span class="st">"Participant still smoking"</span><span class="op">)</span> <span class="op">+</span></span>
 <span>  <span class="fu">ylab</span><span class="op">(</span><span class="st">"Total HDL Cholesterol"</span><span class="op">)</span></span></code></pre>
 </div>
-<figure><img src="../fig/03-twoLvlFactor-rendered-SmokeNow%20vs%20TotChol%20violin-1.png" style="display: block; margin: auto;" class="figure mx-auto d-block"></figure><div id="callout1" class="callout callout">
+<figure><img src="../fig/03-twoLvlFactor-rendered-SmokeNow%20vs%20TotChol%20violin-1.png" style="display: block; margin: auto;" class="figure mx-auto d-block"></figure><div id="notes-on-the-fun-and-fun.data-arguments-in-stat_summary" class="callout callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
 <div id="notes-on-the-fun-and-fun.data-arguments-in-stat_summary" class="callout-inner">
 <h3 class="callout-title">Notes on the <code>fun</code> and
-<code>fun.data</code> arguments in <code>stat_summary()</code><a class="anchor" aria-label="anchor" href="#callout1"></a>
+<code>fun.data</code> arguments in <code>stat_summary()</code><a class="anchor" aria-label="anchor" href="#notes-on-the-fun-and-fun.data-arguments-in-stat_summary"></a>
 </h3>
 <div class="callout-content">
 <p>The <code>fun</code> and <code>fun.data</code> arguments both apply
@@ -379,12 +379,12 @@ the upper bound of the confidence interval.</p>
 </div>
 </div>
 </div>
-<div id="challenge1" class="callout challenge">
+<div id="exercise" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
 <div id="exercise" class="callout-inner">
-<h3 class="callout-title">Exercise<a class="anchor" aria-label="anchor" href="#challenge1"></a>
+<h3 class="callout-title">Exercise<a class="anchor" aria-label="anchor" href="#exercise"></a>
 </h3>
 <div class="callout-content">
 <p>You have been asked to model the relationship between average
@@ -482,12 +482,12 @@ Standard errors: OLS
 SmokeNowYes         0.008   -0.078   0.094     0.175   0.861
 ------------------------------------------------------------</code></pre>
 </div>
-<div id="challenge2" class="callout challenge">
+<div id="exercise-1" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
 <div id="exercise-1" class="callout-inner">
-<h3 class="callout-title">Exercise<a class="anchor" aria-label="anchor" href="#challenge2"></a>
+<h3 class="callout-title">Exercise<a class="anchor" aria-label="anchor" href="#exercise-1"></a>
 </h3>
 <div class="callout-content">
 <ol style="list-style-type: decimal"><li>Using the <code>lm()</code> command, fit a simple linear regression
@@ -580,13 +580,13 @@ population means to fall.</p>
 <span>  <span class="fu">xlab</span><span class="op">(</span><span class="st">"Participant still smoking"</span><span class="op">)</span> <span class="op">+</span></span>
 <span>  <span class="fu">ylab</span><span class="op">(</span><span class="st">"Total HDL Cholesterol"</span><span class="op">)</span></span></code></pre>
 </div>
-<figure><img src="../fig/03-twoLvlFactor-rendered-SmokeNow%20vs%20TotChol%20effect_plot-1.png" style="display: block; margin: auto;" class="figure mx-auto d-block"></figure><div id="callout2" class="callout callout">
+<figure><img src="../fig/03-twoLvlFactor-rendered-SmokeNow%20vs%20TotChol%20effect_plot-1.png" style="display: block; margin: auto;" class="figure mx-auto d-block"></figure><div id="notes-on-jitter-and-point.alpha" class="callout callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
 <div id="notes-on-jitter-and-point.alpha" class="callout-inner">
 <h3 class="callout-title">Notes on <code>jitter</code> and
-<code>point.alpha</code><a class="anchor" aria-label="anchor" href="#callout2"></a>
+<code>point.alpha</code><a class="anchor" aria-label="anchor" href="#notes-on-jitter-and-point.alpha"></a>
 </h3>
 <div class="callout-content">
 <p>Including <code>jitter = c(0.3, 0)</code> results in points being
@@ -616,12 +616,12 @@ health data sets.</p>
 </div>
 </div>
 </div>
-<div id="challenge3" class="callout challenge">
+<div id="exercise-2" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
 <div id="exercise-2" class="callout-inner">
-<h3 class="callout-title">Exercise<a class="anchor" aria-label="anchor" href="#challenge3"></a>
+<h3 class="callout-title">Exercise<a class="anchor" aria-label="anchor" href="#exercise-2"></a>
 </h3>
 <div class="callout-content">
 <p>Use the <code>jtools</code> package to visualise the model of
@@ -711,9 +711,9 @@ group along with their 95% CIs.</li>
         <p>Materials licensed under <a href="../LICENSE.html">CC-BY 4.0</a> by the authors</p>
         
         <p><a href="https://creativecommons.org/licenses/by-sa/4.0/" class="external-link">Template licensed under CC-BY 4.0</a> by <a href="https://carpentries.org" class="external-link">The Carpentries</a></p>
-        <p>Built with <a href="https://github.com/carpentries/sandpaper/tree/0.11.16" class="external-link">sandpaper (0.11.16)</a>,
+        <p>Built with <a href="https://github.com/carpentries/sandpaper/tree/0.12.2" class="external-link">sandpaper (0.12.2)</a>,
         <a href="https://github.com/carpentries/pegboard" class="external-link">pegboard (0.5.3)</a>,
-      and <a href="https://github.com/carpentries/varnish/tree/0.2.16" class="external-link">varnish (0.2.16)</a>.</p>
+      and <a href="https://github.com/carpentries/varnish/tree/0.2.17" class="external-link">varnish (0.2.17)</a>.</p>
 			</div>
 		</footer></div> <!-- / div.container -->
 	<div id="to-top">
@@ -735,7 +735,7 @@ group along with their 95% CIs.</li>
   "identifier": "https://preview.carpentries.org/simple-linear-regression-public-health/instructor/03-twoLvlFactor.html",
   "dateCreated": "2022-11-15",
   "dateModified": "2023-05-02",
-  "datePublished": "2023-05-16"
+  "datePublished": "2023-05-30"
 }
 
   </script><script>

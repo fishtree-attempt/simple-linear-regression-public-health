@@ -195,7 +195,7 @@
       <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsecurrent" aria-expanded="true" aria-controls="flush-collapsecurrent">
         <span class="visually-hidden">Current Chapter</span>
         <span class="current-chapter">
-        Assessing simple linear regression model fit and assumptions
+        5. Assessing simple linear regression model fit and assumptions
         </span>
       </button>
     </div><!--/div.accordion-header-->
@@ -385,12 +385,12 @@ thing is to not blindly rely on <span class="math inline">\(R^2\)</span>
 as a measure of model fit. While it is a useful assessment, it needs to
 be interpreted in the context of the research question and the
 assumptions of the model used.</p>
-<div id="challenge1" class="callout challenge">
+<div id="exercise" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
 <div id="exercise" class="callout-inner">
-<h3 class="callout-title">Exercise<a class="anchor" aria-label="anchor" href="#challenge1"></a>
+<h3 class="callout-title">Exercise<a class="anchor" aria-label="anchor" href="#exercise"></a>
 </h3>
 <div class="callout-content">
 <ol style="list-style-type: decimal"><li>Find the R-squared value for the <code>summ</code> output of our
@@ -479,12 +479,12 @@ example, it would not be appropriate to use our <code>Pulse</code> vs
 ages, if we were specifically interested in the effect of physical
 activity on pulse rate in those aged 70+. A subsample of the NHANES data
 may allow us to answer the research question.</li>
-</ol><div id="challenge2" class="callout challenge">
+</ol><div id="exercise-1" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
 <div id="exercise-1" class="callout-inner">
-<h3 class="callout-title">Exercise<a class="anchor" aria-label="anchor" href="#challenge2"></a>
+<h3 class="callout-title">Exercise<a class="anchor" aria-label="anchor" href="#exercise-1"></a>
 </h3>
 <div class="callout-content">
 <p>You are asked to model the effect of age on general health of
@@ -510,12 +510,12 @@ question.</p>
 </div>
 </div>
 </div>
-<div id="discussion1" class="callout discussion">
+<div id="exercise-1" class="callout discussion">
 <div class="callout-square">
 <i class="callout-icon" data-feather="message-circle"></i>
 </div>
 <div id="exercise-1" class="callout-inner">
-<h3 class="callout-title">Exercise<em> (continued)</em><a class="anchor" aria-label="anchor" href="#discussion1"></a>
+<h3 class="callout-title">Exercise<em> (continued)</em><a class="anchor" aria-label="anchor" href="#exercise-1"></a>
 </h3>
 <div class="callout-content">
 <ol style="list-style-type: upper-alpha"><li>There is more to general health than <code>BMI</code> alone. In this
@@ -564,12 +564,12 @@ have different age distributions, age can be included as a variable in
 the model. Linear regression with multiple explanatory variables is
 covered in the <a href="https://carpentries-incubator.github.io/multiple-linear-regression-public-health" class="external-link">multiple
 linear regression lesson</a>.</p>
-<div id="challenge3" class="callout challenge">
+<div id="exercise-2" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
 <div id="exercise-2" class="callout-inner">
-<h3 class="callout-title">Exercise<a class="anchor" aria-label="anchor" href="#challenge3"></a>
+<h3 class="callout-title">Exercise<a class="anchor" aria-label="anchor" href="#exercise-2"></a>
 </h3>
 <div class="callout-content">
 <p>One of your colleagues is asked to model the effect of income on
@@ -651,12 +651,12 @@ violate the linearity assumption.</p>
 <span>  <span class="fu">ylab</span><span class="op">(</span><span class="st">"Combined diastolic blood pressure"</span><span class="op">)</span> <span class="op">+</span></span>
 <span>  <span class="fu">xlab</span><span class="op">(</span><span class="st">"Age in Months"</span><span class="op">)</span> </span></code></pre>
 </div>
-<figure><img src="../fig/05-fitAndAssumptionSLR-rendered-non-linearity%20example%20part%202-1.png" style="display: block; margin: auto;" class="figure mx-auto d-block"></figure><div id="challenge4" class="callout challenge">
+<figure><img src="../fig/05-fitAndAssumptionSLR-rendered-non-linearity%20example%20part%202-1.png" style="display: block; margin: auto;" class="figure mx-auto d-block"></figure><div id="exercise-3" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
 <div id="exercise-3" class="callout-inner">
-<h3 class="callout-title">Exercise<a class="anchor" aria-label="anchor" href="#challenge4"></a>
+<h3 class="callout-title">Exercise<a class="anchor" aria-label="anchor" href="#exercise-3"></a>
 </h3>
 <div class="callout-content">
 <p>In the example above we saw that squaring an explanatory variable can
@@ -699,12 +699,12 @@ create an effect plot using <code>effect_plot()</code>.</p>
 </div>
 </div>
 </div>
-<div id="challenge5" class="callout challenge">
+<div id="exercise-3" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
 <div id="exercise-3" class="callout-inner">
-<h3 class="callout-title">Exercise<em> (continued)</em><a class="anchor" aria-label="anchor" href="#challenge5"></a>
+<h3 class="callout-title">Exercise<em> (continued)</em><a class="anchor" aria-label="anchor" href="#exercise-3"></a>
 </h3>
 <div class="callout-content">
 <p>There is curvature in the data, which makes a straight line
@@ -780,12 +780,12 @@ independent.</li>
 </ol><p><strong>Common solution:</strong> This can be overcome using random
 effects, which are a component of mixed effects models (not discussed
 here).</p>
-<div id="challenge6" class="callout challenge">
+<div id="exercise-4" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
 <div id="exercise-4" class="callout-inner">
-<h3 class="callout-title">Exercise<a class="anchor" aria-label="anchor" href="#challenge6"></a>
+<h3 class="callout-title">Exercise<a class="anchor" aria-label="anchor" href="#exercise-4"></a>
 </h3>
 <div class="callout-content">
 <p>In which of the following scenarios would the independent errors
@@ -882,12 +882,12 @@ relies on the <code>patchwork</code> package being loaded.</p>
 <figure><img src="../fig/05-fitAndAssumptionSLR-rendered-heteroscedasticity%20example-1.png" style="display: block; margin: auto;" class="figure mx-auto d-block"></figure><p>Since there is no obvious pattern in the residuals along the fitted
 values or the explanatory variable, there is no reason to suspect that
 the equal variance assumption has been violated.</p>
-<div id="challenge7" class="callout challenge">
+<div id="exercise-5" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
 <div id="exercise-5" class="callout-inner">
-<h3 class="callout-title">Exercise<a class="anchor" aria-label="anchor" href="#challenge7"></a>
+<h3 class="callout-title">Exercise<a class="anchor" aria-label="anchor" href="#exercise-5"></a>
 </h3>
 <div class="callout-content">
 <ol style="list-style-type: decimal"><li>Create diagnistic plots to check for heteroscedasticity in our
@@ -972,12 +972,12 @@ predictions of the mean.</p>
 <span>  <span class="fu">ylab</span><span class="op">(</span><span class="st">"Count"</span><span class="op">)</span> <span class="op">+</span></span>
 <span>  <span class="fu">xlab</span><span class="op">(</span><span class="st">"Residual"</span><span class="op">)</span></span></code></pre>
 </div>
-<figure><img src="../fig/05-fitAndAssumptionSLR-rendered-check%20normality%20example-1.png" style="display: block; margin: auto;" class="figure mx-auto d-block"></figure><div id="challenge8" class="callout challenge">
+<figure><img src="../fig/05-fitAndAssumptionSLR-rendered-check%20normality%20example-1.png" style="display: block; margin: auto;" class="figure mx-auto d-block"></figure><div id="exercise-6" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
 <div id="exercise-6" class="callout-inner">
-<h3 class="callout-title">Exercise<a class="anchor" aria-label="anchor" href="#challenge8"></a>
+<h3 class="callout-title">Exercise<a class="anchor" aria-label="anchor" href="#exercise-6"></a>
 </h3>
 <div class="callout-content">
 <ol style="list-style-type: decimal"><li>Construct a histogram of the residuals of the
@@ -1074,9 +1074,9 @@ using and by visualising our model parameters.</li>
         <p>Materials licensed under <a href="../LICENSE.html">CC-BY 4.0</a> by the authors</p>
         
         <p><a href="https://creativecommons.org/licenses/by-sa/4.0/" class="external-link">Template licensed under CC-BY 4.0</a> by <a href="https://carpentries.org" class="external-link">The Carpentries</a></p>
-        <p>Built with <a href="https://github.com/carpentries/sandpaper/tree/0.11.16" class="external-link">sandpaper (0.11.16)</a>,
+        <p>Built with <a href="https://github.com/carpentries/sandpaper/tree/0.12.2" class="external-link">sandpaper (0.12.2)</a>,
         <a href="https://github.com/carpentries/pegboard" class="external-link">pegboard (0.5.3)</a>,
-      and <a href="https://github.com/carpentries/varnish/tree/0.2.16" class="external-link">varnish (0.2.16)</a>.</p>
+      and <a href="https://github.com/carpentries/varnish/tree/0.2.17" class="external-link">varnish (0.2.17)</a>.</p>
 			</div>
 		</footer></div> <!-- / div.container -->
 	<div id="to-top">
@@ -1098,7 +1098,7 @@ using and by visualising our model parameters.</li>
   "identifier": "https://preview.carpentries.org/simple-linear-regression-public-health/instructor/05-fitAndAssumptionSLR.html",
   "dateCreated": "2022-11-15",
   "dateModified": "2023-05-02",
-  "datePublished": "2023-05-16"
+  "datePublished": "2023-05-30"
 }
 
   </script><script>
